@@ -1,0 +1,161 @@
+.popular-questions {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #4E4D49;
+
+  @media (min-width: 375px) {
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1920px) {
+    padding-bottom: 101px;
+  }
+
+  &__heading {
+    @include text;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    display: block;
+
+    @media (min-width: 375px) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media (min-width: 990px) {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 52px;
+      margin-bottom: 72px;
+    }
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    
+    @media (min-width: 768px) {
+      max-height: 320px;
+      flex-wrap: wrap;
+      column-gap: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      max-height: 500px;
+      column-gap: 178px;
+    }
+
+    @media (min-width: 1920px) {
+      max-height: 540px;
+      column-gap: 178px;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    border-bottom: 1px solid #4E4D49;
+    position: relative;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 15px;
+
+
+    @media (min-width: 990px) {
+      padding-bottom: 27px;
+      gap: 20px;
+    }
+
+    @media (min-width: 1920px) {
+      padding-bottom: 50px;
+      gap: 25px;
+    }
+    
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+    
+    &:nth-child(3n) {
+      @media (min-width: 768px) {
+        border: none;
+        padding-bottom: 0;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 40%;
+    }
+
+    &::after {
+      content: url('../images/down.svg');
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__text {
+    @include text;
+    @include small-text;
+    max-width: 228px;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+
+    @media (min-width: 375px) {
+      max-width: 269px;
+    }
+
+    @media (min-width: 990px) {
+      max-width: 343px;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 380px;
+    }
+  }
+
+  &__description {
+    color: #FFF;
+    /* Body 1/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    opacity: 0.8;
+
+    display: none;
+
+    @media (min-width: 1440px) {
+      display: inline;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 18px;
+    }
+  }
+}

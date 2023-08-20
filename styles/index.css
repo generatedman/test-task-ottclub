@@ -1,0 +1,1772 @@
+@import url("./normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+.header {
+  padding-bottom: 30px;
+}
+@media (min-width: 375px) {
+  .header {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 75px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    padding-bottom: 86px;
+  }
+}
+@media (min-width: 1140px) {
+  .header {
+    padding-bottom: 109px;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px 0 16px;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .header__nav {
+    padding-top: 44px;
+  }
+}
+@media (min-width: 768px) {
+  .header__nav {
+    padding: 23px 40px 0 23px;
+  }
+}
+@media (min-width: 990px) {
+  .header__nav {
+    padding: 23px 50px 0 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__nav {
+    padding: 23px 172px 0 172px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__nav {
+    padding: 30px 229px 0 229px;
+  }
+}
+.header__social-medias {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__social-medias {
+    display: flex;
+    gap: 24px;
+  }
+}
+.header__registration {
+  margin-left: 48px;
+  margin-right: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__registration {
+    display: flex;
+    gap: 24px;
+  }
+}
+.header__logo {
+  width: 56px;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    width: 64px;
+    height: 57px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__logo {
+    width: 96px;
+    height: 86px;
+  }
+}
+
+.sign-in-button-social-media-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .price-benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sign-in-button {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  background: transparent;
+}
+@media (min-width: 1920px) {
+  .sign-in-button {
+    width: 127px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+.sign-in-button:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 16px 0 16px;
+  position: relative;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+    text-align: left;
+  }
+}
+@media (min-width: 990px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 172px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 229px;
+  }
+}
+
+.price-card {
+  position: relative;
+  background: url("../images/card.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 85px 16px 32px;
+  margin: 0 auto;
+}
+@media (min-width: 375px) {
+  .price-card {
+    background-image: url("../images/big-card.svg");
+    background-size: contain;
+    height: 644px;
+    max-width: 343px;
+  }
+}
+@media (min-width: 768px) {
+  .price-card {
+    background-image: url("../images/horizontal-card.svg");
+    height: 428px;
+    padding: 101px 75px 32px;
+    max-width: 688px;
+  }
+}
+@media (min-width: 990px) {
+  .price-card {
+    background-image: url("../images/big-horizontal-card.png");
+    height: 472px;
+    padding: 100px 140px 0px;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1440px) {
+  .price-card {
+    background-image: url("../images/1440-card.svg");
+    height: 472px;
+    padding: 112px 140px 0px;
+    max-width: 862px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card {
+    background-image: url("../images/1920-card.svg");
+    height: 629px;
+    padding: 150px 210px 0px;
+    max-width: 1149px;
+  }
+}
+.price-card__eye-image {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  .price-card__eye-image {
+    width: 46px;
+    height: 58px;
+  }
+}
+@media (min-width: 990px) {
+  .price-card__eye-image {
+    width: 50px;
+    height: 62px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__eye-image {
+    width: 72px;
+    height: 98px;
+    top: 24px;
+  }
+}
+.price-card__price-text {
+  color: #FF1F1F;
+  font-family: Inter;
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 67px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+@media (min-width: 375px) {
+  .price-card__price-text {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__price-text {
+    font-size: 90px;
+  }
+}
+.price-card__month-text {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+@media (min-width: 1920px) {
+  .price-card__month-text {
+    font-size: 20px;
+  }
+}
+.price-card__additional-text {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.8;
+  display: block;
+  width: 200px;
+  margin: 0 auto 24px;
+}
+@media (min-width: 375px) {
+  .price-card__additional-text {
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__additional-text {
+    font-size: 18px;
+  }
+}
+.price-card__benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 49px;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (min-width: 375px) {
+  .price-card__benefits {
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 990px) {
+  .price-card__benefits {
+    gap: 28px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__benefits {
+    margin-bottom: 60px;
+  }
+}
+.price-card__benefit {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+@media (min-width: 375px) {
+  .price-card__benefit {
+    font-size: 16px;
+  }
+}
+@media (min-width: 990px) {
+  .price-card__benefit {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .price-card__benefit {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__benefit {
+    font-size: 26px;
+  }
+}
+.price-card__benefit::before {
+  content: url("../images/like.svg");
+  position: absolute;
+  left: -42px;
+}
+@media (min-width: 768px) {
+  .price-card__form {
+    display: flex;
+  }
+}
+.price-card__email {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  opacity: 0.9;
+  color: rgba(60, 60, 67, 0.6);
+  letter-spacing: 0.15px;
+  height: 53px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #D0D0D1;
+  opacity: 0.9;
+  background: #FFF;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  color: black;
+}
+@media (min-width: 375px) {
+  .price-card__email {
+    font-size: 16px;
+    height: 56px;
+  }
+}
+@media (min-width: 768px) {
+  .price-card__email {
+    width: 55%;
+    height: 50px;
+    margin-bottom: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__email {
+    height: 60px;
+    font-size: 18px;
+  }
+}
+.price-card__button {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  height: 50px;
+  background: #FF1F1F;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0;
+}
+@media (min-width: 375px) {
+  .price-card__button {
+    height: 56px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .price-card__button {
+    width: 45%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .price-card__button {
+    height: 60px;
+    font-size: 18px;
+  }
+}
+.price-card__button:hover {
+  cursor: pointer;
+}
+
+.tv-channels {
+  padding-top: 81px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+@media (min-width: 375px) {
+  .tv-channels {
+    padding-top: 76px;
+    padding-bottom: 51px;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels {
+    padding-bottom: 68px;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels {
+    padding-top: 123px;
+    padding-bottom: 117px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels {
+    padding-top: 140px;
+    padding-bottom: 194px;
+  }
+}
+.tv-channels__heading {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.9;
+  position: relative;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+@media (min-width: 375px) {
+  .tv-channels__heading {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels__heading {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__heading {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__heading {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__heading {
+    font-size: 52px;
+  }
+}
+.tv-channels__heading::after {
+  position: absolute;
+  bottom: 5px;
+  content: url("../images/tickets.png");
+}
+@media (min-width: 768px) {
+  .tv-channels__heading::after {
+    content: url("../images/tickets (1).png");
+    bottom: 20px;
+    right: -30%;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__heading::after {
+    bottom: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__heading::after {
+    content: url("../images/Group 815.png");
+    right: -20%;
+  }
+}
+.tv-channels__description {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%;
+  opacity: 0.7;
+  width: 288px;
+  display: block;
+  margin: 0 auto 24px;
+}
+@media (min-width: 375px) {
+  .tv-channels__description {
+    font-size: 16px;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__description {
+    font-size: 20px;
+  }
+}
+@media (min-width: 375px) {
+  .tv-channels__description {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels__description {
+    text-align: left;
+    max-width: 510px;
+    margin: 0 0 33px 0;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__description {
+    max-width: 626px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__description {
+    max-width: 840px;
+    margin-bottom: 50px;
+  }
+}
+.tv-channels__category {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  height: 40px;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .tv-channels__category {
+    height: 46px;
+    padding: 12px 18px;
+    line-height: 150%;
+    margin-bottom: 41px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__category {
+    height: 60px;
+    padding: 16px 24px;
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+.tv-channels__category:hover {
+  background-color: #FC3232;
+  border: 2px solid #FC3232;
+  font-weight: 500;
+}
+.tv-channels__categories {
+  display: flex;
+  overflow-x: hidden;
+  gap: 8px;
+  margin-left: 16px;
+}
+@media (min-width: 768px) {
+  .tv-channels__categories {
+    margin-left: 40px;
+    gap: 25px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__categories {
+    margin: 0;
+    padding: 0 172px;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__categories {
+    padding: 0 229px;
+  }
+}
+.tv-channels__cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 19px;
+}
+@media (min-width: 375px) {
+  .tv-channels__cards {
+    margin-bottom: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels__cards {
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__cards {
+    -moz-column-gap: 49px;
+         column-gap: 49px;
+    row-gap: 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__cards {
+    -moz-column-gap: 69px;
+         column-gap: 69px;
+    row-gap: 50px;
+  }
+}
+.tv-channels__card {
+  width: 84px;
+  height: 57px;
+}
+.tv-channels__card--768px {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tv-channels__card--768px {
+    display: block;
+  }
+}
+.tv-channels__card--990px {
+  display: none;
+}
+@media (min-width: 990px) {
+  .tv-channels__card--990px {
+    display: block;
+  }
+}
+@media (min-width: 375px) {
+  .tv-channels__card {
+    width: 102px;
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels__card {
+    width: 154px;
+    height: 105px;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__card {
+    width: 158px;
+    height: 108px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__card {
+    width: 180px;
+    height: 122px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__card {
+    width: 236px;
+    height: 162px;
+  }
+}
+.tv-channels__image {
+  width: 84px;
+  height: 57px;
+}
+@media (min-width: 375px) {
+  .tv-channels__image {
+    width: 102px;
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .tv-channels__image {
+    width: 154px;
+    height: 105px;
+  }
+}
+@media (min-width: 990px) {
+  .tv-channels__image {
+    width: 158px;
+    height: 108px;
+  }
+}
+@media (min-width: 1440px) {
+  .tv-channels__image {
+    width: 180px;
+    height: 122px;
+  }
+}
+@media (min-width: 1920px) {
+  .tv-channels__image {
+    width: 236px;
+    height: 162px;
+  }
+}
+.tv-channels__show-all {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.tv-channels__show-all::after {
+  content: url("../images/Arrow.svg");
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.different-devices__technologies {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 44px;
+  padding-top: 45px;
+}
+@media (min-width: 375px) {
+  .different-devices__technologies {
+    padding-bottom: 49px;
+  }
+}
+@media (min-width: 768px) {
+  .different-devices__technologies {
+    padding-top: 98px;
+    padding-bottom: 72px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 990px) {
+  .different-devices__technologies {
+    padding-top: 117px;
+    padding-bottom: 111px;
+  }
+}
+@media (min-width: 1440px) {
+  .different-devices__technologies {
+    padding-top: 131px;
+  }
+}
+.different-devices__technology--lg {
+  width: 106.8px;
+  height: 14.4px;
+  display: block;
+}
+@media (min-width: 375px) {
+  .different-devices__technology--lg {
+    width: 148px;
+    height: 22px;
+  }
+}
+@media (min-width: 990px) {
+  .different-devices__technology--lg {
+    width: 197px;
+    height: 26px;
+  }
+}
+@media (min-width: 1920px) {
+  .different-devices__technology--lg {
+    width: 262.667px;
+    height: 34.667px;
+  }
+}
+.different-devices__technology--samsung {
+  display: block;
+  width: 122.4px;
+  height: 21.6px;
+}
+@media (min-width: 375px) {
+  .different-devices__technology--samsung {
+    width: 157px;
+    height: 26px;
+  }
+}
+@media (min-width: 375px) {
+  .different-devices__technology--samsung {
+    width: 188px;
+    height: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .different-devices__technology--samsung {
+    width: 207px;
+    height: 34px;
+  }
+}
+@media (min-width: 1920px) {
+  .different-devices__technology--samsung {
+    width: 276px;
+    height: 45px;
+  }
+}
+.different-devices__technology--ios {
+  display: block;
+  width: 48px;
+  height: 19.2px;
+}
+@media (min-width: 375px) {
+  .different-devices__technology--ios {
+    width: 65px;
+    height: 25px;
+  }
+}
+@media (min-width: 990px) {
+  .different-devices__technology--ios {
+    width: 76px;
+    height: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .different-devices__technology--ios {
+    width: 102px;
+    height: 40px;
+  }
+}
+.different-devices__technology--android {
+  display: block;
+  width: 128.16px;
+  height: 23.04px;
+}
+@media (min-width: 375px) {
+  .different-devices__technology--android {
+    width: 145px;
+    height: 24px;
+  }
+}
+@media (min-width: 990px) {
+  .different-devices__technology--android {
+    width: 175px;
+    height: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .different-devices__technology--android {
+    width: 233px;
+    height: 40px;
+  }
+}
+
+.popular-questions {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #4E4D49;
+}
+@media (min-width: 375px) {
+  .popular-questions {
+    padding-bottom: 87px;
+  }
+}
+@media (min-width: 1440px) {
+  .popular-questions {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions {
+    padding-bottom: 101px;
+  }
+}
+.popular-questions__heading {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  display: block;
+}
+@media (min-width: 375px) {
+  .popular-questions__heading {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .popular-questions__heading {
+    text-align: left;
+  }
+}
+@media (min-width: 990px) {
+  .popular-questions__heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .popular-questions__heading {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions__heading {
+    font-size: 52px;
+    margin-bottom: 72px;
+  }
+}
+.popular-questions__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+@media (min-width: 768px) {
+  .popular-questions__list {
+    max-height: 320px;
+    flex-wrap: wrap;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .popular-questions__list {
+    max-height: 500px;
+    -moz-column-gap: 178px;
+         column-gap: 178px;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions__list {
+    max-height: 540px;
+    -moz-column-gap: 178px;
+         column-gap: 178px;
+  }
+}
+.popular-questions__item {
+  display: flex;
+  border-bottom: 1px solid #4E4D49;
+  position: relative;
+  padding-bottom: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (min-width: 990px) {
+  .popular-questions__item {
+    padding-bottom: 27px;
+    gap: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions__item {
+    padding-bottom: 50px;
+    gap: 25px;
+  }
+}
+.popular-questions__item:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .popular-questions__item:nth-child(3n) {
+    border: none;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .popular-questions__item {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .popular-questions__item {
+    width: 40%;
+  }
+}
+.popular-questions__item::after {
+  content: url("../images/down.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.popular-questions__text {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 228px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+}
+@media (min-width: 375px) {
+  .popular-questions__text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 990px) {
+  .popular-questions__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .popular-questions__text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 375px) {
+  .popular-questions__text {
+    max-width: 269px;
+  }
+}
+@media (min-width: 990px) {
+  .popular-questions__text {
+    max-width: 343px;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions__text {
+    max-width: 380px;
+  }
+}
+.popular-questions__description {
+  color: #FFF;
+  /* Body 1/Regular */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  opacity: 0.8;
+  display: none;
+}
+@media (min-width: 1440px) {
+  .popular-questions__description {
+    display: inline;
+  }
+}
+@media (min-width: 1920px) {
+  .popular-questions__description {
+    font-size: 18px;
+  }
+}
+
+.contacts {
+  background-repeat: no-repeat;
+  padding-top: 48px;
+  padding-bottom: 10px;
+  background-position: left bottom;
+}
+@media (min-width: 375px) {
+  .contacts {
+    padding-top: 64px;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts {
+    padding-top: 90px;
+  }
+}
+.contacts__items {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media (min-width: 375px) {
+  .contacts__items {
+    flex-direction: row;
+    gap: 31px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__items {
+    gap: 21px;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts__items {
+    gap: 140px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__side-items {
+    max-width: 156px;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts__side-items {
+    max-width: 217px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__items-helpers-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contacts__link {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+@media (min-width: 1920px) {
+  .contacts__link {
+    font-size: 18px;
+  }
+}
+.contacts__help-heading {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.contacts__contact {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  display: block;
+  text-align: left;
+}
+@media (min-width: 1920px) {
+  .contacts__contact {
+    font-size: 18px;
+  }
+}
+.contacts__chat-help {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+@media (min-width: 1920px) {
+  .contacts__chat-help {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+.contacts__chat-logos {
+  display: flex;
+  gap: 20px;
+}
+@media (min-width: 320px) {
+  .contacts__chat-logos {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__chat-logos {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts__chat-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+.contacts__paypment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+@media (min-width: 375px) {
+  .contacts__paypment-methods {
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__paypment-methods {
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+}
+.contacts__copyright-company-number {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+@media (min-width: 768px) {
+  .contacts__copyright-company-number {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+.contacts__copyright {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  opacity: 0.8;
+}
+.contacts__company-number {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  opacity: 0.8;
+}
+
+@media (min-width: 375px) {
+  .chats-and-helpers {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .chats-and-helpers {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 51px;
+  }
+}
+
+.price-section-tv-channels-container {
+  background-image: url("../images/web.svg"), radial-gradient(at left center, rgb(51, 17, 71) 5%, rgb(53, 21, 59) 16%, rgb(0, 0, 1) 69%, rgb(0, 0, 0) 100%);
+  background-position: left center, top;
+  background-size: 200px, auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .price-section-tv-channels-container {
+    background-size: 280px, auto;
+  }
+}
+@media (min-width: 990px) {
+  .price-section-tv-channels-container {
+    background-size: 320px, auto;
+  }
+}
+@media (min-width: 1920px) {
+  .price-section-tv-channels-container {
+    background-size: 420px, auto;
+  }
+}
+
+.test-button-container {
+  padding-bottom: 45px;
+}
+
+.test-button {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  background-color: #FC3232;
+  font-size: 15px;
+  font-weight: 600;
+  height: 49px;
+  width: 288px;
+  display: block;
+  margin: 0 auto;
+}
+.test-button:hover {
+  cursor: pointer;
+}
+@media (min-width: 375px) {
+  .test-button {
+    width: 343px;
+    height: 56px;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1920px) {
+  .test-button {
+    width: 530px;
+    height: 84px;
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .test-button--left {
+    margin: 0 0;
+  }
+}
+
+.top-section {
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .top-section {
+    padding-bottom: 0;
+  }
+}
+.top-section__bonuses {
+  display: none;
+}
+@media (min-width: 768px) {
+  .top-section__bonuses {
+    display: flex;
+    padding-top: 81px;
+    padding-bottom: 75px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 990px) {
+  .top-section__bonuses {
+    padding-top: 107px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .top-section__bonuses {
+    padding-top: 187px;
+    padding-bottom: 107px;
+  }
+}
+@media (min-width: 1920px) {
+  .top-section__bonuses {
+    padding-top: 254px;
+    padding-bottom: 140px;
+  }
+}
+.top-section__bonus {
+  display: flex;
+  flex-direction: column;
+  max-width: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+@media (min-width: 990px) {
+  .top-section__bonus {
+    max-width: 205px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .top-section__bonus {
+    max-width: 250px;
+    gap: 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .top-section__bonus {
+    max-width: 342px;
+  }
+}
+.top-section__bonus-image {
+  width: 48px;
+  height: 48px;
+}
+@media (min-width: 990px) {
+  .top-section__bonus-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .top-section__bonus-image {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (min-width: 1920px) {
+  .top-section__bonus-image {
+    width: 96px;
+    height: 96px;
+  }
+}
+.top-section__bonus-title {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+@media (min-width: 1440px) {
+  .top-section__bonus-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .top-section__bonus-title {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+.top-section__bonus-description {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  display: none;
+}
+@media (min-width: 990px) {
+  .top-section__bonus-description {
+    display: block;
+  }
+}
+@media (min-width: 1920px) {
+  .top-section__bonus-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .devices-and-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    text-align: left;
+    gap: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .devices-and-button {
+    max-width: 430px;
+    gap: 36px;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button {
+    max-width: 465px;
+    gap: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button {
+    max-width: 532px;
+    gap: 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .devices-and-button {
+    max-width: 700px;
+    gap: 50px;
+  }
+}
+.devices-and-button__heading {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 18px;
+}
+@media (min-width: 375px) {
+  .devices-and-button__heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .devices-and-button__heading {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button__heading {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button__heading {
+    font-size: 42px;
+  }
+}
+@media (min-width: 1920px) {
+  .devices-and-button__heading {
+    font-size: 56px;
+  }
+}
+.devices-and-button__devices-image {
+  display: block;
+  margin: 0 auto;
+  width: 286px;
+  height: 162px;
+  margin-bottom: 25px;
+}
+@media (min-width: 375px) {
+  .devices-and-button__devices-image {
+    width: 302px;
+    height: 192px;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .devices-and-button__devices-image {
+    position: absolute;
+    width: 460px;
+    height: 280px;
+    right: -25%;
+    top: -5%;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button__devices-image {
+    width: 540px;
+    height: 340px;
+    right: -12%;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button__devices-image {
+    height: 380px;
+    right: 1%;
+    width: 675px;
+  }
+}
+@media (min-width: 1920px) {
+  .devices-and-button__devices-image {
+    height: 530px;
+    right: 0;
+    width: 900px;
+  }
+}
+@media (min-width: 375px) {
+  .devices-and-button__devices-image--dark {
+    width: 340px;
+    height: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .devices-and-button__devices-image--dark {
+    top: 0;
+    width: 360px;
+    right: -8%;
+    height: 300px;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button__devices-image--dark {
+    height: 320px;
+    right: 0;
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button__devices-image--dark {
+    height: 360px;
+    right: 5%;
+    width: 590px;
+  }
+}
+@media (min-width: 1920px) {
+  .devices-and-button__devices-image--dark {
+    height: 440px;
+    right: 5%;
+    width: 760px;
+  }
+}
+.devices-and-button__text {
+  font-style: normal;
+  line-height: 140%;
+  font-family: Inter;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 24px;
+  display: block;
+}
+@media (min-width: 375px) {
+  .devices-and-button__text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button__text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 375px) {
+  .devices-and-button__text {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .devices-and-button__text {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 990px) {
+  .devices-and-button__text {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .devices-and-button__text {
+    margin-bottom: 0;
+  }
+}
+
+.header-top-section-container {
+  background: url("../images/bats.svg"), linear-gradient(125deg, rgb(10, 24, 45) 13%, rgb(47, 7, 50) 29%, rgb(74, 9, 28) 67%, rgb(82, 17, 17) 94%);
+  box-shadow: rgba(0, 0, 0, 0.85) 0px -90px 36px -28px inset;
+  background-position: bottom, bottom;
+  background-size: 600px, auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: 375px) {
+  .header-top-section-container {
+    background-size: 750px, auto, auto;
+  }
+}
+@media (min-width: 768px) {
+  .header-top-section-container {
+    background-size: 850px, auto, auto;
+  }
+}
+@media (min-width: 990px) {
+  .header-top-section-container {
+    background-size: 1100px, auto, auto;
+  }
+}
+@media (min-width: 1440px) {
+  .header-top-section-container {
+    background-size: 1500px 600px, auto, auto;
+  }
+}
+@media (min-width: 1920px) {
+  .header-top-section-container {
+    background-size: 2000px 800px, auto, auto;
+  }
+}
+
+.contacts-popular-questions-container {
+  background: url("../images/Group 5335.png"), radial-gradient(at bottom left, rgb(71, 17, 68) 5%, rgb(60, 25, 66) 15%, rgb(0, 0, 1) 69%, rgb(0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+@media (min-width: 768px) {
+  .contacts-popular-questions-container {
+    background-image: url("../images/bg pic.png"), radial-gradient(at bottom left, rgb(71, 17, 68) 5%, rgb(60, 25, 66) 15%, rgb(0, 0, 1) 69%, rgb(0, 0, 0) 100%);
+  }
+}
+@media (min-width: 990px) {
+  .contacts-popular-questions-container {
+    background-size: 990px 390px, auto;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts-popular-questions-container {
+    background-size: 1440px 505px, auto;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts-popular-questions-container {
+    background-size: 1620px 665px, auto;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+.price-section-tv-channels-container {
+  background-image: url('../images/web.svg'), radial-gradient(at left center, rgba(51,17,71,1) 5%, rgba(53,21,59,1) 16%, rgba(0,0,1,1) 69%, rgba(0,0,0,1) 100%);
+  background-position: left center, top;
+  background-size: 200px, auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 280px, auto;
+  }
+
+  @media (min-width: 990px) {
+    background-size: 320px, auto;
+  }
+
+  @media (min-width: 1920px) {
+    background-size: 420px, auto;
+  }
+}

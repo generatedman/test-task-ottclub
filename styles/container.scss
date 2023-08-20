@@ -1,0 +1,23 @@
+.container {
+  padding: 0 16px 0 16px;
+  position: relative;
+  text-align: center;
+  
+  
+  @media (min-width: 768px) {
+    padding: 0 40px;
+    text-align: left;
+  }
+
+  @media (min-width: 990px) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 172px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 0 229px;
+  }
+}

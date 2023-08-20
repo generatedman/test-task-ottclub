@@ -1,0 +1,21 @@
+.contacts-popular-questions-container {
+  background: url('../images/Group\ 5335.png'), radial-gradient(at bottom left, rgba(71,17,68,1) 5%, rgba(60,25,66,1) 15%, rgba(0,0,1,1) 69%, rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  @media (min-width: 768px) {
+    background-image: url('../images/bg\ pic.png'),radial-gradient(at bottom left, rgba(71,17,68,1) 5%, rgba(60,25,66,1) 15%, rgba(0,0,1,1) 69%, rgba(0,0,0,1) 100%);
+  }
+
+  @media (min-width: 990px) {
+    background-size: 990px 390px, auto;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 1440px 505px, auto;
+  }
+
+  @media (min-width: 1920px) {
+    background-size: 1620px 665px, auto;
+  }
+}

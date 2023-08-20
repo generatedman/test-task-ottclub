@@ -1,0 +1,27 @@
+.header-top-section-container {
+  background: url('../images/bats.svg'), linear-gradient(125deg, rgba(10,24,45,1) 13%, rgba(47,7,50,1) 29%, rgba(74,9,28,1) 67%, rgba(82,17,17,1) 94%);
+  box-shadow: rgba(0, 0, 0, 0.85) 0px -90px 36px -28px inset;
+  background-position: bottom, bottom;
+  background-size: 600px, auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: 375px) {
+    background-size: 750px, auto, auto;
+  }
+
+  @media (min-width: 768px) {
+    background-size: 850px, auto, auto;
+  }
+  
+  @media (min-width: 990px) {
+    background-size: 1100px, auto, auto;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 1500px 600px, auto, auto;
+  }
+
+  @media (min-width: 1920px) {
+    background-size: 2000px 800px, auto, auto;
+  }
+}

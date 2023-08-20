@@ -1,0 +1,23 @@
+.sign-in-button {
+  @include text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  background: transparent;
+
+  @media (min-width: 1920px) {
+    width: 127px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
